@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login CDP Pizzas</title>
+</head>
+<body>
+<h1>Login CDP Pizzeria</h1>
+<form th:action="@{/login}" method="post">
+    <div>
+        <label>Usuario:</label>
+        <input type="text" name="username" value="comprador" readonly/>
+    </div>
+    <div>
+        <label>Contraseña:</label>
+        <input type="password" name="password" value="123" readonly/>
+    </div>
+    <div>
+        <button type="submit">Ingresar</button>
+    </div>
+</form>
+</body>
+</html>

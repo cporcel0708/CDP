@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Pizzas</title>
+</head>
+<body>
+<h1>Lista de Pizzas</h1>
+<ul>
+    <li th:each="pizza : ${pizzas}">
+        <span th:text="${pizza.name}">Pizza Name</span>:
+        <span th:text="${pizza.price}">Pizza Price</span>
+    </li>
+</ul>
+</body>
+</html>
